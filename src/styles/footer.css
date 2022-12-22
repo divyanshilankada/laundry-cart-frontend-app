@@ -1,0 +1,17 @@
+.userFooter-container
+{
+    background-color: #182838;
+    color: #FFFFFF;
+
+    padding: 10px;
+    text-align: center;
+
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+}
+
+.userFooter_p
+{
+    font-size: 15px;
+}

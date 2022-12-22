@@ -1,0 +1,200 @@
+.orderProducts-container
+{
+    width: 95%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+
+    margin: 20px 50px 50px 50px;
+
+}
+
+
+.orderProduct_p
+{
+    float: left;
+}
+
+.search_box
+{
+    float: right;
+    border-bottom: 1px solid gray;
+    width: 15%;
+}
+
+.search_icon
+{
+    height: 20px;
+    width: 20px;
+}
+
+.products_box
+{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.products_header
+{
+    display: grid;
+    grid-template-columns: 32% 13% 30% 25%;
+
+    background-color: #2F2F2F;
+    color: white;
+
+    padding: 12px;
+}
+
+.product_details
+{
+    display: grid;
+    grid-template-columns: 30% 15% 30% 25%;
+
+    border: 1px solid rgb(221, 220, 220);
+    border-top: 0px;
+
+    padding: 20px;
+}
+
+.product_img
+{
+    width: 100%;
+    height: 35px;
+}
+
+.product_type
+{
+    display: grid;
+    grid-template-columns: 12% 88%;
+}
+
+.product_desc
+{
+    margin-left: 5%;
+}
+
+.product_desc_h4
+{
+    color: #5861AE;
+}
+
+.product_desc_p
+{
+    color: #76788B;
+    font-size: smaller;
+}
+
+.Quantity
+{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+.quantity
+{
+    width: 12%;
+    height: 17px;
+
+    border: 0px;
+}
+
+.quantity_value
+{
+    width: 30%;
+    height: 30px;
+    border: 1px solid rgb(189, 188, 188);
+    margin-left: 10%;
+    text-align: center;
+}
+
+.wash_type
+{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.washType_icon
+{
+    margin-top: 5px;
+    width: 7%;
+    height: 30px;
+}
+
+#price
+{
+    color: #5861AE;
+    font-size: 24px;
+}
+
+.price_h4
+{
+    margin-top: 5px;
+}
+
+.reset_button
+{
+    margin-top: 2px;
+    margin-right: 10%;
+    float: right;
+    width: 25%;
+    height: 25px;
+    border: 1px solid #5861AE;
+    border-radius: 4px;
+
+    color: #5861AE;
+}
+
+.order_navigate_page
+{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5%;
+    margin: 30px 0;
+}
+
+
+.nav 
+{
+    width: 100px;
+    height: 30px;
+
+    outline: none;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid #5861AE;
+}
+
+.order_proceed
+{
+    background-color: #5861AE;
+    color: white;
+}
+
+.order_proceed:hover
+{
+    background-color: #3d4379;
+    color: white;
+}
+
+.order_cancelLink
+{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonNav
+{
+    border: 0;
+    color: #5861AE;
+}
+
+
+
+
+

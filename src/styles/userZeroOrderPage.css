@@ -1,0 +1,67 @@
+.userZeroOrders-container
+{
+    width: 95%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.userZeroOrders_header
+{
+    margin: 20px;
+}
+
+.userZeroOrders_p
+{
+    float: left;
+}
+
+.search_box
+{
+    float: right;
+    border-bottom: 1px solid gray;
+    width: 15%;
+}
+
+.search_icon
+{
+    height: 20px;
+    width: 20px;
+}
+
+.userZeroOrder_linkBox
+{
+    display: flex;
+    flex-direction: column;
+    height: 65vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.userZeroOrder_createLink
+{
+    border: 1px solid #5861AE;
+    border-radius: 4px;
+    opacity: 1;
+    width : 7%;
+    height: 30px;
+    color: #5861AE;
+    text-decoration: none;
+
+    text-align: center;
+    padding-top: 4px;
+
+    margin-top: 20px;
+}
+
+.userZeroOrders_p_
+{
+    color: #222B45;
+    opacity: 0.5;
+}
+
+.userZeroOrder_createLink:hover
+{
+    background-color: #5861AE;
+    color: white;
+}

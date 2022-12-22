@@ -1,0 +1,15 @@
+.create-order-container
+{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.create-order-box
+{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
