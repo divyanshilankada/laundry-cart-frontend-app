@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+}
+
+.register_box
+{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 25% 0.2% 74%;
+}
+
+.register_middle_box
+{
+    display: flex;
+    align-items: center;
+}
+
+.Laundry_register_main_box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 60px);
+    margin: 0 20%;
+}
+
+.register_middle
+{
+    width: 2px;
+    height: 183px;
+    /* transform: matrix(0, -1, 1, 0, 0, 0); */
+    background: #5861AE 0% 0% no-repeat padding-box;
+    box-shadow: 0px -3px 6px #0000000B;
+    opacity: 0.5;
+}
+
+.register_h1
+{
+    font: normal normal Avenir;
+    letter-spacing: 0px;
+    color: #5861AE;
+    text-transform: capitalize;
+    opacity: 1;
+    font-size: 50px;
+}
+
+.register_p_two
+{
+    text-align: left;
+    font: normal normal normal Avenir;
+    letter-spacing: 0.8px;
+    color: #565657;
+    text-transform: capitalize;
+    opacity: 1;
+    font-size:small;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.register_p_one
+{
+    text-align: left;
+    font: normal normal normal Avenir;
+    letter-spacing: 0.8px;
+    color: #565657;
+    text-transform: capitalize;
+    opacity: 1;
+    font-size:medium;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.register_login_button
+{
+    border: 1px solid #4552C1;
+    border-radius: 4px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 120px;
+    height: 40px;
+    font: normal normal bold 15px/20px Open Sans;
+    letter-spacing: 0.3px;
+    color: #4552C1
+}
+
+.register_input_container
+{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #F8F9FF;
+}
+
+.register_input_box
+{
+    display: grid;
+    grid-template-columns: 44% 44%;
+    row-gap: 30px;
+    justify-content: space-between;
+}
+
+.register_input
+{
+    width: 100%;
+    height: 40px;
+    padding: 0 5px;
+    border: 0;
+    border-bottom: 1px solid #989898;
+    opacity: 1;
+    outline: none;
+    background-color: inherit;
+}
+
+.select_regis
+{
+    width: 100%;
+    height: 40px;
+    padding: 0 5px;
+    border: 0;
+    border-bottom: 1px solid #989898;
+    opacity: 1;
+    outline: none;
+    color: #7e7e7e;
+    background-color: inherit;
+}
+
+.register_select
+{
+    width: 100%;
+    height: 40px;
+    padding: 0 5px;
+    border: 0;
+    border-bottom: 1px solid #989898;
+    opacity: 1;
+    outline: none;
+    color: black;
+    background-color: inherit;
+}
+
+.register_select:focus,.select_regis:focus
+{
+    color: black;
+}
+
+.phone_box
+{
+    display: flex;
+    gap: 15px;
+}
+
+.phone_option_outline
+{
+    outline: none;
+    background-color: inherit;
+    height: 40px;
+    padding: 0 5px;
+    border: 0;
+    border-bottom: 1px solid #989898;
+}
+
+.register_h2
+{
+    color: #5861AE;
+}
+
+.checkbox_container
+{
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox_box
+{
+    position: relative;
+}
+
+.tick
+{
+    position: absolute;
+    left: 1px;
+    bottom: 6px;
+}
+
+.reg_checkbox_p
+{
+    text-decoration: underline;
+    font: normal normal normal 14px/20px Open Sans;
+    letter-spacing: 0.49px;
+    color: #5861AE;
+    opacity: 1;
+}
+
+.register_component_button
+{
+    width: 150px;
+    height: 50px;
+    /* UI Properties */
+    background: #5861AE 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    border: 0;
+    outline: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.register_component_button_box
+{
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.register_input_h5
+{
+    font: normal normal normal 12px/15px Open Sans;
+    letter-spacing: 0.42px;
+    color: #5861AE;
+    opacity: 1;
+    margin-left: 2px;
+}
+
+.input_name_err_box
+{
+    display: flex;
+    gap: 5px;
+}
+
+.input_name_err_box > span
+{
+    font-size:x-small;
+    color: rgb(255, 21, 21);
+}

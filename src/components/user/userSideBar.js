@@ -1,8 +1,8 @@
 import React from 'react';
-import home from '../images/home-run.png'
-import more from '../images/more.png'
-import list from '../images/list.png'
-import '../styles/userSideBar.css'
+import home from '../../images/home-run.png'
+import more from '../../images/more.png'
+import list from '../../images/list.png'
+import '../../styles/userSideBar.css'
 
 function UserSideBar () {
     return (

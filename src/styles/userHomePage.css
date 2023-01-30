@@ -2,6 +2,7 @@
 
 .user-main-box
 {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 55px calc(100% - 55px);
+    margin-top: 60px;
 }

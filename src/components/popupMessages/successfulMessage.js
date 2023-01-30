@@ -1,5 +1,5 @@
-import '../styles/successfulMessage.css';
-import doneIcon from  '../images/done.png';
+import '../../styles/successfulMessage.css';
+import doneIcon from  '../../images/done.png';
 import { Link } from "react-router-dom";
 
 function SuccessfulMessage () {
@@ -18,7 +18,7 @@ function SuccessfulMessage () {
                     <p className='successful_message_p'>You can track the delivery in the "Orders" section.</p>
                 </div>
                 {/* <button className='successful_button_nav'></button> */}
-                <Link className="successful_button_nav" to="/orders"> 
+                <Link className="successful_button_nav" to="/user"> 
                     <p>Go to orders</p>
                 </Link>
             </div>

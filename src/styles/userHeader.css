@@ -12,7 +12,9 @@
     width: 100%;
     height: 60px;
     box-sizing: border-box;
-    border-bottom: gray 1px solid;
+    box-shadow: 0px 2px 48px #0000000F;
+    position: fixed; 
+    top: 0;
 }
 
 .userHeader_h4
@@ -30,7 +32,7 @@
     display: flex;
     flex-direction: row;
 
-    gap: 30px;
+    /* gap: 30px; */
 }
 
 .userHeader_menu_username_box
@@ -42,6 +44,7 @@
     text-align: center;
     align-items: center;
     gap: 20px;
+    /* width:160px; */
 }
 
 .userHeader_menu_username_pic
@@ -57,8 +60,12 @@
 
 .userHeader_menu_p
 {
+    padding: 0 25px;
     color: #565657;
-    margin-top: 20px;
+    border-left: 1px solid rgb(218, 217, 217);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .userHeader_menu_username

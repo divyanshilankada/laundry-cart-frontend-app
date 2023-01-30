@@ -1,6 +1,6 @@
-import searchIcon from '../images/search.png'
+import searchIcon from '../../images/search.png'
 import { Link } from "react-router-dom";
-import '../styles/userZeroOrderPage.css'
+import '../../styles/userZeroOrderPage.css'
 
 
 function UserZeroOrders () {
@@ -14,7 +14,7 @@ function UserZeroOrders () {
             </header>
             <div className='userZeroOrder_linkBox'>
                 <p className='userZeroOrders_p_'>No Orders avaialble</p>
-                <Link className="userZeroOrder_createLink" to="/create-order"> 
+                <Link className="userZeroOrder_createLink" to="/user/create-order"> 
                     <p>Create</p>
                 </Link>
             </div>

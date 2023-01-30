@@ -1,7 +1,7 @@
-import '../styles/summary.css'
+import '../../styles/summary.css'
 import React, { useState } from 'react';
-import closeIcon from '../images/close.png';
-import tickIcon from '../images/tick.png'
+import closeIcon from '../../images/close.png';
+import tickIcon from '../../images/tick.png'
 import axios from 'axios'
 
 function Summary (props) {
@@ -13,6 +13,8 @@ function Summary (props) {
     const [address, setAddress] = useState("");
     const [phone, setPhone] = useState("");
     const [totalPrice, setTotalPrice] = useState(0);
+    var header = {token: localStorage.getItem('token')};
+
 
     console.log(props.OrderDetails);
     function handleAddress(id)
@@ -41,25 +43,28 @@ function Summary (props) {
 
         if(address !== "")
         {
-            let postObj = {"order_id":"22",
-                        "user_id":"AA1", 
-                        "order_address_id":"AA111",
+            let postObj = {
+                        "total_price":totalPrice+90,
                         "order_product_type":props.OrderDetails,
                         "order_store_details":phone,
                         "order_status":"progress" };
 
         
 
-            axios.post('https://laundry-cart-backend-komp.onrender.com/orders',postObj)
+            axios.post('https://laundry-cart-backend-komp.onrender.com/orders',postObj,{headers:header})
                 .then(response => {
                     console.log(response);
+                    if(response.status === 200)
+                    {
+                        props.onSuccess(true);
+                        props.onChange(false);
+                    }
                 })
                 .catch(error => {
                     console.log(error);
                 });
 
-            props.onSuccess(true);
-            props.onChange(false);
+            
         }
         
     }

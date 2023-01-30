@@ -1,17 +1,17 @@
 import React, {  useState } from 'react';
 import { Link } from "react-router-dom";
-import Summary from './summary';
-import SuccessfulMessage from './successfulMessage';
-import searchIcon from '../images/search.png'
-import '../styles/orderProducts.css'
-import washingIcon from '../images/washing-machine.png'
-import ironingIcon from '../images/ironing.png'
-import towelIcon from '../images/towel.png'
-import bleachIcon from '../images/bleach.png'
-import washingBlueIcon from '../images/washing-machine-blue.png'
-import ironingBlueIcon from '../images/ironing-blue.png'
-import towelBlueIcon from '../images/towel-blue.png'
-import bleachBlueIcon from '../images/bleach-blue.png'
+import Summary from '../summary/summary';
+import SuccessfulMessage from '../popupMessages/successfulMessage';
+import searchIcon from '../../images/search.png'
+import '../../styles/orderProducts.css'
+import washingIcon from '../../images/washing-machine.png'
+import ironingIcon from '../../images/ironing.png'
+import towelIcon from '../../images/towel.png'
+import bleachIcon from '../../images/bleach.png'
+import washingBlueIcon from '../../images/washing-machine-blue.png'
+import ironingBlueIcon from '../../images/ironing-blue.png'
+import towelBlueIcon from '../../images/towel-blue.png'
+import bleachBlueIcon from '../../images/bleach-blue.png'
 import productDetails from './products.json';
 
 
@@ -270,10 +270,10 @@ function OrderProducts () {
                     )}
                   
                 <div className='order_navigate_page'>
-                    <Link className="order_cancelLink nav" to="/home"> 
+                    <Link className="order_cancelLink nav" to="/user"> 
                         <p className='buttonNav'>Cancel</p>
                     </Link>
-                    <button className='order_proceed nav' onClick={() => {Object.keys(orderDetails).length !== 0 ? setProceedToSummary(true) : setProceedToSummary(false)}}>Proceed</button>
+                    <button className='order_proceed nav' onClick={() => {Object.keys(orderDetails).length !== 0 && orderSuccess===false ? setProceedToSummary(true) : setProceedToSummary(false)}}>Proceed</button>
                     {Object.keys(orderDetails).length !== 0 && proceedToSumary === true? <Summary OrderDetails = {orderDetails} onChange={handleSummaryChange} onSuccess={handleSuccessfulMessage}></Summary> : orderSuccess === true ? <SuccessfulMessage></SuccessfulMessage> : <></>}
                 </div> 
             </div>
